@@ -1,6 +1,7 @@
 from math import ceil
 from math import floor
 
+
 def linspace(lo, hi, steps):
     """Return a list of int numbers where minimum and maximum is first and
     last number and all steps are evenly distributes between them.
@@ -79,7 +80,6 @@ def test_create_table():
             (table[-1][7] == limits['height'][1]),
         )
     print('All done!')
-
 
 if __name__ == '__main__':
     test_linspace()

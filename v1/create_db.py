@@ -1,8 +1,8 @@
 from db import Database
 from generate_table import calculate_table_size
 from generate_table import create_table
-from os.path import exists
 from os import remove
+from os.path import exists
 
 
 DBNAME='competitivecyclist_parsed.sqlite3'

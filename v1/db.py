@@ -1,6 +1,6 @@
-from sqlite3 import Connection
 from os import remove
 from os.path import exists
+from sqlite3 import Connection
 
 
 class Database:

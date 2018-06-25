@@ -1,13 +1,14 @@
-from time import sleep
 from datetime import datetime
+from time import sleep
+
+from selenium.webdriver import Chrome
+from selenium.webdriver import ChromeOptions
+
+from create_db import DBNAME
 from db import Database
 from generate_table import calculate_table_size
 from generate_table import create_table
 from parser import parse_fit
-from selenium.webdriver import ChromeOptions
-from selenium.webdriver import Chrome
-from selenium.common.exceptions import TimeoutException
-from create_db import DBNAME
 
 
 URL = 'https://www.competitivecyclist.com/Store/catalog/fitCalculatorBike.jsp'

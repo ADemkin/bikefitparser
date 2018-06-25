@@ -1,6 +1,8 @@
-from selenium import webdriver
 from time import sleep
 import re
+
+from selenium.webdriver import Chrome
+
 
 def parse_fit(browser, a, b, c, d, e, f, g, h):
     # Select Male - Road - CM
@@ -63,11 +65,10 @@ def parse_fit(browser, a, b, c, d, e, f, g, h):
         'Setback Seatpost': 'seatpost_type',
     }
     results = {key:get_value(value) for (key, value) in geometry_measurements.items()}
-    # browser.quit()
     return results
 
 def test():
-    browser = webdriver.Chrome('webdriver/chromedriver')
+    browser = Chrome('webdriver/chromedriver')
     browser.get(
         'https://www.competitivecyclist.com/Store/catalog/fitCalculatorBike.jsp'
     )
